@@ -1,0 +1,1 @@
+$Autocomplete<textarea type="$Type" class="$Type form-control" id="$ID" name="$Name" rows="$Rows" cols="$Cols" <% if $RightTitle %>aria-describedby="{$Name}_right_title" <% end_if %>>$Value</textarea>

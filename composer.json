@@ -1,0 +1,25 @@
+{
+    "name": "schrattenholz/lehnmuehle",
+    "description": "Sola-Bestellsystem Lehmuehle",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Fabian Schrattenholz",
+            "homepage": "https://sola-soft.de"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": "^4.1"
+    },
+	"extra": {
+        "expose": [
+            "css",
+            "img",
+            "javascript",
+            "fonts"
+        ]
+	}
+}
