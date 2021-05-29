@@ -11,7 +11,7 @@
 						<li class="media mb-0 pt-3<% if not $First %> pt-3 <% end_if %> <% if $Last && not $ShowAddress && not $ShowOpeningHours %>pb-2 border-bottom<% else_if not $Last %>border-bottom<% end_if %> colorSet{$ColorSetID}">
 						
 						<div class="media-body mt-1 px-3">
-						  <h4>$Title $ColorSetID</h4>
+						  <h4>$Title</h4>
 						  <div class="font-size-ms">
 						  $Content
 						  </div>
