@@ -24,15 +24,15 @@
               <div class="cz-product-gallery">
                 <div class=" order-sm-2">
 				<% if $ProductImages %>
-				<% loop $ProductImages.Sort('SortOrder') %>
-                  <div class=" <% if $First %>active<% end_if %>" id="ProductImage_$ID">
-				  <% if $Top.ShowQualityLabel %>
-				  <div class="picLabel"><img src="/_resources/themes/sehnenmuehle/img/bioland.png" /></div>
-				  <% end_if %>
-				      <img class="" src="$ScaleWidth(600).URL"  alt="$Filename">
-                    
-                  </div>
-				 <% end_loop %>
+					<% loop $ProductImages.Sort('SortOrder') %>
+					  <div class=" <% if $First %>active<% end_if %>" id="ProductImage_$ID">
+					  <% if $Top.ShowQualityLabel %>
+					  <div class="picLabel"><img src="/_resources/themes/sehnenmuehle/img/bioland.png" /></div>
+					  <% end_if %>
+						  <img class="" src="$ScaleWidth(600).URL"  alt="$Filename">
+						
+					  </div>
+					<% end_loop %>
 				 <% else %>
 				 <div class=" <% if $First %>active<% end_if %>" id="ProductImage_$ID">
 				 <div class="picLabel"><img src="/_resources/themes/sehnenmuehle/img/bioland.png" /></div>
