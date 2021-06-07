@@ -15,17 +15,17 @@
 				<div class="row no-gutters justify-content-between">
 					<% loop $LimitedEntries.Limit($Limit) %>
 						<!-- Card contentbased -->
-						<div class="card text-left overflow-hidden <% if not $CoverImage %><% if not $Last %>mr-5<% end_if %> flex-fill <% end_if %><% if $ColorSetID %>colorSet{$ColorSetID} <% end_if %>" >
+						<div class="card text-left overflow-hidden <% if not $DefaultImage %><% if not $Last %>mr-5<% end_if %> flex-fill <% end_if %><% if $ColorSetID %>colorSet{$ColorSetID} <% end_if %>" >
 						<% if $DeepLink %><a href="$DeepLink.Link"><% end_if %>
-						  <div class="card-body <% if $CoverImage %>p-0<% end_if %>">
-						   $CoverImage.Fill(300,300)
-						  <% if $CoverImage %>
+						  <div class="card-body <% if $DefaultImage %>p-0<% end_if %>">
+						   $DefaultImage.Fill(300,300)
+						  <% if $DefaultImage %>
 						  <div class="position-absolute text-left" style="bottom:1rem;">
 						  <% end_if %>
 
 							<h5 class="card-title px-3 mb-0">$Title</h5>
 							<p class="card-text font-size-sm px-3">$ReadMore</p>
-						  <% if $CoverImage %>
+						  <% if $DefaultImage %>
 						 </div>
 						  <% end_if %>
 						  </div><% if $DeepLink %></a><% end_if %>
