@@ -16808,7 +16808,7 @@ html:not([dir=rtl]) .cz-range-slider-ui.noUi-horizontal .noUi-handle {
 }
 
 .bg-secondary {
-  background-color: #f6f9fc !important;
+  background-color: #93ad94 !important;
 }
 
 .bg-text-accent {
@@ -17387,7 +17387,17 @@ h3, h4, h5, h6 {
   }
 }
 
-/* AUTOCOMPLETE */
+.breadcrumb {
+  background: rgba(255, 255, 255, 0.8);
+  padding: .5rem 1rem;
+}
+
+.headerImage h1 {
+  padding: .5rem 1rem;
+  background: rgba(147, 173, 148, 0.8);
+}
+
+/* AUTOCOMPLETE  */
 .ui-tooltip {
   background: #4a4a4a;
   color: #96f226;
