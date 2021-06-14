@@ -16,7 +16,7 @@
 							<h3 class="font-size-base mb-0">$CurrentMember.FirstName $CurrentMember.Surname</h3><span class="text-accent font-size-sm">$CurrentMember.Email</span>
 						</div>
 					</div>
-					<a class="btn btn-light btn-sm btn-shadow mt-3 mt-sm-0" href="{$OrderConfig.AcountRoot.Link}profil"><i class="czi-edit mr-2"></i>Benutzerdaten bearbeiten</a>
+					<a class="btn btn-dark btn-sm btn-shadow mt-3 mt-sm-0" href="{$OrderConfig.AcountRoot.Link}profil"><i class="czi-edit mr-2"></i>Benutzerdaten bearbeiten</a>
 				</div>
 				 <% end_if %>
 				

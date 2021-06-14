@@ -35,7 +35,9 @@
 					<% end_loop %>
 				 <% else %>
 				 <div class=" <% if $First %>active<% end_if %>" id="ProductImage_$ID">
+				 <% if $Top.ShowQualityLabel %>
 				 <div class="picLabel"><img src="/_resources/themes/sehnenmuehle/img/bioland.png" /></div>
+				   <% end_if %>
 				      <img class="cz-image" src="$CoverImage.ScaleWidth(600).URL"  alt="$CoverImage.URL">
                     <!--<div class="cz-image-zoom-pane"></div>-->
                   </div>

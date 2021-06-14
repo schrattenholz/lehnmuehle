@@ -15,7 +15,12 @@
 				<% loop $Children.Sort('Date','DESC') %>
 				<!-- Catogory-->
 				<div class="col-md-4 col-sm-6 mb-3">
-				<div class="card border-0">
+				<div class="card product-card border-0">
+				<% if not $Top.HideLabel %>
+					<% if $OutOfStock %>
+					<span class="badge badge-dark badge-shadow" wfd-id="218">Ausverkauft</span>
+					<% end_if %>
+				<% end_if %>
 				<a class="d-block overflow-hidden rounded-lg" href="$Link">
 					<img class="card-img" src="$CoverImage.Fill(400,266).URL" alt="$CoverImage.Filename">
 				</a>

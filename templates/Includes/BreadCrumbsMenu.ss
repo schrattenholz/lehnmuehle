@@ -13,7 +13,7 @@
 					<% if $getPage.Children && $getPage.ClassName="Schrattenholz\Order\ProductList"  %>
 					<ul class="dropdown-menu">
 					<% loop $getPage.Children %>
-					<li><a class="dropdown-item" href="$Link">$Title</a></li>
+					<li><a class="dropdown-item" href="$Link">$SummaryTitle</a></li>
 					<% end_loop %>
 					</ul>
 					<% end_if %>

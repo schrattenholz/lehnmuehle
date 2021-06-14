@@ -33,14 +33,14 @@ table {
   background-color: #f5f5f5;
 }
 </style>
-<h3>Guten Tag $CheckoutAdress.Gender $CheckoutAdress.FirstName $CheckoutAdress.Surname</h3>
+<h3>Guten Tag $CheckoutAddress.Gender $CheckoutAddress.FirstName $CheckoutAddress.Surname</h3>
 <p>
 möchte sich als Wiederverkäufer registrieren.
 
 Möchten Sie den Kunden als Wiederverkäufer bestätigen?
-<a href="{$BaseHref}groupconfirmation/confirm/$CheckoutAdress.ID">Als Wiederverkäufer bestätigen</a>
+<a href="{$BaseHref}groupconfirmation/confirm/$CheckoutAddress.ID">Als Wiederverkäufer bestätigen</a>
 Möchten Sie das der Kunde weiterhin as Prvatkunde geführt wird?
-<a href="{$BaseHref}groupconfirmation/deny/$CheckoutAdress.ID">Als Privatkunden führen</a>
+<a href="{$BaseHref}groupconfirmation/deny/$CheckoutAddress.ID">Als Privatkunden führen</a>
 </p>
 <p>Der Kunde wird nach der Bestätigun per E-Mail informiert.
 		  <div>

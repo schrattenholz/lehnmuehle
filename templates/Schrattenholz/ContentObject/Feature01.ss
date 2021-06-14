@@ -15,14 +15,14 @@
 					<% loop $LimitedEntries.Limit(4) %> 
 					  <div class="col-12 col-sm-6  px-2 mb-sm-3">
 						<div class="card product-card card-static bg-transparent <% if $First %>rounded-big-top-left<% else_if $Last %>rounded-big-bottom-right<% end_if %>">
-							<img class="w-100" src="$CoverImage.Fill(278,278).URL" alt="$Title">
+							<img class="w-100" src="$DefaultImage.Fill(278,278).URL" alt="$Title">
 						</div>
 					  </div>
 					<% end_loop %>
 				<% else %>
 				<div class="col px-0 px-2 mb-sm-3">
 						<div class="card product-card card-static bg-transparent rounded-big-top-left rounded-big-bottom-right">
-							<img class="w-100" src="$LimitedEntries.First.CoverImage.Fill(800,800).URL" alt="Product">
+							<img class="w-100" src="$LimitedEntries.First.DefaultImage.Fill(800,800).URL" alt="Product">
 						</div>
 					  </div>
 				<% end_if %>

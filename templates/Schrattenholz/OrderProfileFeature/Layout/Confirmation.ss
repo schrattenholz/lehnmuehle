@@ -34,7 +34,7 @@ table {
 }
 </style>
 <div style="margin:0 20px 0 20px";>
-<h3>Guten Tag</h3>
+<h3>Guten Tag orderprofilefeature</h3>
 <p>
 folgende Bestellung ist soeben eingegangen:
 </p>
@@ -103,10 +103,10 @@ folgende Bestellung ist soeben eingegangen:
 				</tr>
 			  </thead>
 				<tbody>
-					<tr><td width="120px">Firmenname:</td><td>$CheckoutAdress.Company</td></tr>
-					<tr><td width="120px">Strasse:</td><td class="noBorder">$CheckoutAdress.Street</td></tr>
-					<tr><td width="120px">PLZ:</td><td class="noBorder">$CheckoutAdress.ZIP</td></tr>
-					<tr><td width="120px">Ort:</td><td class="noBorder">$CheckoutAdress.City</td></tr>
+					<tr><td width="120px">Firmenname:</td><td>$CheckoutAddress.Company</td></tr>
+					<tr><td width="120px">Strasse:</td><td class="noBorder">$CheckoutAddress.Street</td></tr>
+					<tr><td width="120px">PLZ:</td><td class="noBorder">$CheckoutAddress.ZIP</td></tr>
+					<tr><td width="120px">Ort:</td><td class="noBorder">$CheckoutAddress.City</td></tr>
 				</tbody>
 			</table>
           </div>
@@ -120,10 +120,10 @@ folgende Bestellung ist soeben eingegangen:
 				</tr>
 			  </thead>
 				<tbody>
-					<tr><td width="120px">Vorname:</td><td width="80%">$CheckoutAdress.FirstName</td></tr>
-					<tr><td width="120px">Nachname:</td><td class="noBorder">$CheckoutAdress.Surname</td></tr>
-					<tr><td width="120px">Telefon:</td><td class="noBorder">$CheckoutAdress.PhoneNumber</td></tr>
-					<tr><td width="120px">Email:</td><td class="noBorder">$CheckoutAdress.Email</td></tr>
+					<tr><td width="120px">Vorname:</td><td width="80%">$CheckoutAddress.FirstName</td></tr>
+					<tr><td width="120px">Nachname:</td><td class="noBorder">$CheckoutAddress.Surname</td></tr>
+					<tr><td width="120px">Telefon:</td><td class="noBorder">$CheckoutAddress.PhoneNumber</td></tr>
+					<tr><td width="120px">Email:</td><td class="noBorder">$CheckoutAddress.Email</td></tr>
 				</tbody>
 			</table>
 		</div>

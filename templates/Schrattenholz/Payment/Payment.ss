@@ -1,7 +1,7 @@
 
 	 <div class="col mb-4 card">
 		<div class="card-header">
-			<h3 class="accordion-heading">Zahlungsoptionen<span class="accordion-indicator"></span></h3>
+			<h3 class="accordion-heading">Zahlungsoptionen <span class="accordion-indicator"></span></h3>
 		</div>
 		<div class="accordion mb-4" id="paymenMethods">
 			<% loop $RelatedPaymentMethods($DeliveryTypeID,$PaymentMethodID) %>
@@ -24,7 +24,7 @@
 					-->
 					<% if $Template %>
 						$Content
-						$renderTemplate
+						$renderTemplate($Top.Basket.ID)
 					<% else %>
 						$Content
 					<% end_if %>
@@ -33,4 +33,5 @@
 			</div>
 			<% end_loop %>				  
 		</div>
+		<input type="hidden" name="PaymentMethodID" id="PaymentMethodID" value="$RelatedPaymentMethods($DeliveryTypeID,$PaymentMethodID).First.ID" />
 	</div>

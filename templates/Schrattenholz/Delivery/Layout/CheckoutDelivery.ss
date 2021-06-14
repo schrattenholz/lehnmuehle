@@ -25,11 +25,11 @@
 
 					  <% loop $DeliverySetup %>
                       <div class="form-group delivery <% if $Top.Basket.DeliveryType.Type="delivery" %><% else %>d-none<% end_if %>">
-					<% if $getCity($Top.CurrentOrderCustomerGroup.ID,$Top.CheckoutAdress.ZIP,$Top.CheckoutAdress.City) %>
+					<% if $getCity($Top.CurrentOrderCustomerGroup.ID,$Top.CheckoutAddress.ZIP,$Top.CheckoutAddress.City) %>
                         <select class="form-control custom-select" name="Delivery" id="Delivery" disabled>
 				   
 					<% if $Top.Basket.RouteID %>
-					<option value="" data-city="$Top.CheckoutAdress.City" data-zip="$Top.CheckoutAdress.ZIP">$Top.CheckoutAdress.City</option>
+					<option value="" data-city="$Top.CheckoutAddress.City" data-zip="$Top.CheckoutAddress.ZIP">$Top.CheckoutAddress.City</option>
 					<% else %>
 					<option value="" data-city="" data-zip="">Wählen Sie Ihren Ort</option>
 						<% loop $getCities($Top.CurrentOrderCustomerGroup.ID).Sort('Title') %>
@@ -52,7 +52,7 @@
 						
                         </select>
 						<% else %>
-							<p>Leider findet nach $Top.CheckoutAdress.City zur Zeit keine Lieferung statt.</p>
+							<p>Leider findet nach $Top.CheckoutAddress.City zur Zeit keine Lieferung statt.</p>
 							<p>Sie möchten, dass Ihr Ort in eine unsere Lieferrouten aufgenommen wird?
 							Sprechen Sie uns an. Vielleicht k&ouml;nnen wir es einrichten. </p>
 						<% end_if %>
@@ -73,7 +73,7 @@
 						  </option>
                          <% end_loop %>
                         </select>
-						<input type="hidden" id="collectionDate" name="CollectionDate" <% if $Top.CheckoutAdress.CollectionDate %>value="$Top.CheckoutAdress.CollectionDate"<% end_if %> />
+						<input type="hidden" id="collectionDate" name="CollectionDate" <% if $Top.CheckoutAddress.CollectionDate %>value="$Top.CheckoutAddress.CollectionDate"<% end_if %> />
                       </div>
 <% end_loop %>					  
 					  <div class="deliverynotice d-none">Liefertermin</div>
@@ -134,14 +134,14 @@
         <aside class="col-lg-4 pt-4 pt-lg-0">
           <div class="cz-sidebar-static rounded-lg box-shadow-lg ml-lg-auto">
             <div class="widget mb-3">
-                <h2 class="h6 mb-4 text-center"><i class="h6 text-body czi-home"></i>&nbsp;Adresse</h4>
+                <h2 class="h6 mb-4 text-center"><i class="h6 text-body czi-home"></i>&nbsp;Addresse</h4>
                 <ul class="list-unstyled font-size-sm">
-                  <li><span class="text-muted">Kontakt:&nbsp;</span>$CheckoutAdress.FirstName $CheckoutAdress.Surname</li>
-                  <li><span class="text-muted">Adresse:&nbsp;</span>$CheckoutAdress.Street, $CheckoutAdress.ZIP $CheckoutAdress.City</li>
-                  <li><span class="text-muted">Telefon:&nbsp;</span>$CheckoutAdress.PhoneNumber</li>
-				  <li><span class="text-muted">E-Mail:&nbsp;</span>$CheckoutAdress.Email</li>
-				  <input type="hidden" id="OrderProfileFeature_RegistrationForm_useraccounttab_ZIP" value="$CheckoutAdress.ZIP" />
-				  <input type="hidden" id="OrderProfileFeature_RegistrationForm_useraccounttab_City" value="$CheckoutAdress.City" />
+                  <li><span class="text-muted">Kontakt:&nbsp;</span>$CheckoutAddress.FirstName $CheckoutAddress.Surname</li>
+                  <li><span class="text-muted">Addresse:&nbsp;</span>$CheckoutAddress.Street, $CheckoutAddress.ZIP $CheckoutAddress.City</li>
+                  <li><span class="text-muted">Telefon:&nbsp;</span>$CheckoutAddress.PhoneNumber</li>
+				  <li><span class="text-muted">E-Mail:&nbsp;</span>$CheckoutAddress.Email</li>
+				  <input type="hidden" id="OrderProfileFeature_RegistrationForm_useraccounttab_ZIP" value="$CheckoutAddress.ZIP" />
+				  <input type="hidden" id="OrderProfileFeature_RegistrationForm_useraccounttab_City" value="$CheckoutAddress.City" />
                 </ul>
             </div>
           </div>

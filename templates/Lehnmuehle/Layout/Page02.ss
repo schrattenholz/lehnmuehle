@@ -11,11 +11,11 @@
 	</div>
 	
 	<% if $ContentObjects %>
-		<section class="contentBlock pb-1">
+		<section class="contentBlock pb-5">
 			<div class="container">
 			<% loop ContentObjects.Sort('SortID') %>
 				<!-- prjctDescrColumn -->
-				<article class="prjctDescrColumn hasMbBottom hasOver <% if $Even %> prjctDescrColumnOrderInverse <% end_if %>">
+				<article class="py-4 prjctDescrColumn hasMbBottom hasOver <% if $Even %> prjctDescrColumnOrderInverse <% end_if %>">
 					<div class="row align-items-md-center">
 						<div class="col-12 col-md-6 colImage <% if $Even %> order-md-2 <% end_if %>">
 							<!-- prjctColumnImageWrap -->

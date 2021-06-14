@@ -33,7 +33,7 @@ table {
   background-color: #f5f5f5;
 }
 </style>
-<h3>Guten Tag $CheckoutAdress.FirstName $CheckoutAdress.Surname</h3>
+<h3>Guten Tag $CheckoutAddress.FirstName $CheckoutAddress.Surname</h3>
 <% if $Message=="confirmed" %>
 <h4>Dein Status als Wiederverkäufer wurde bestätigt.</h4>
 <p>
