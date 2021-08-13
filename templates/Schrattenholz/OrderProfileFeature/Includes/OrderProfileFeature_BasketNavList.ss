@@ -21,7 +21,7 @@
 						<div class="media align-items-center"><a class="d-block mr-2" href="$Product.Link?id=$ID&v=$PriceBlockElement.ID&vac=$Vacuum"><img width="64" src="$Product.ProductImages.First.Fill(200,200).URL" alt="Product"/></a>
 						<div class="media-body">
 						<a href="$Product.Link?id=$ID&v=$PriceBlockElement.ID">
-							<h6 class="widget-product-title  <% if $PriceBlockElementID %>mb-n1"><% end_if %>
+							<h6 class="widget-product-title  <% if $PriceBlockElementID %>mb-n1<% end_if %> ">
 							$Product.SummaryTitle</h6>
 							<% if $PriceBlockElementID %>
 							<p class="text-muted font-size-ms  mb-1">$PriceBlockElement.FullTitle(0)</p>
