@@ -20,12 +20,12 @@
 						<div class="col-12 col-md-6 colImage <% if $Even %> order-md-2 <% end_if %>">
 							<!-- prjctColumnImageWrap -->
 							<div class="prjctColumnImageWrap alignleft rounded">
-								<img class="d-block w-100 rounded" src="$Image.Fill(670,450).URL" alt="image description">
+								<img class="d-block w-100 rounded-lg" src="$Image.Fill(670,450).URL" alt="image description">
 							</div>
 						</div>
-						<div class="col-12 col-md-6 colDescr <% if $Even %> order-md-1 <% end_if %>">
+						<div class="col-12 col-md-6 colDescr shadow py-3<% if $Even %> order-md-1 <% end_if %>">
 							<!-- prjctTextHolder -->
-							<div class="bg-white hasShadow rounded prjctTextHolder position-relative">
+							<div  class="bg-white hasShadow rounded-lg prjctTextHolder position-relative">
 								<!-- postTitleTextTag -->
 								<strong class="d-block postTitleTextTag font-weight-normal text-uppercase">$Title</strong>
 								<% if $SubHead %><h3 class="text-capitalize">$SubHead</h3><% end_if %>

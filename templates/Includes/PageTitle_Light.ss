@@ -45,7 +45,7 @@
           <% include BreadCrumbs Design="" %>
         </div>
         <div class="order-lg-1 pr-lg-4 text-center text-lg-left">
-          <h1 class="h3 mb-0">$MenuTitle.XML</h1>
+          <h1 class="h3 text-light  mb-0">$MenuTitle.XML</h1>
         </div>
       </div>
     </div>

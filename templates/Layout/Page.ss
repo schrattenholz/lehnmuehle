@@ -27,7 +27,7 @@
 <div class="<% if $HeaderImage %>spacer-white<% end_if %> bg-white py-5">
     <section class="container pb-4 mb-md-3 mt-2 mt-sm-5">
       <div class="row">
-        <div class="col-md-8 mb-4">
+        <div class="col-md-7 mb-4">
 		<h1>$MenuTitle</h1>
             <div class="pb-4 my-2 my-md-0 pb-md-5 text-center text-sm-left">
               $Content
@@ -35,7 +35,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 mb-4 align-self-start">
+        <div class="col-md-5 mb-4 align-self-start">
 
 			$ContentObjects.Sort('SortID').First.renderIT
 
