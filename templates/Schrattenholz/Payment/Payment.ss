@@ -1,4 +1,3 @@
-
 	 <div class="col mb-4 card">
 		<div class="card-header">
 			<h3 class="accordion-heading">Zahlungsoptionen <span class="accordion-indicator"></span></h3>
@@ -8,7 +7,7 @@
 			<div class="card">
 				<div class="card-header">
 				<h3 class="accordion-heading">
-				<a href="#pM_$ID" data-target="#pM_$ID" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="pM_$ID">
+				<a href="#pM_$ID" data-target="#pM_$ID" onclick="setPaymentMethodID($ID);" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="pM_$ID">
 					$Title
 					<span class="accordion-indicator"><i data-feather="chevron-up"></i></span>
 					</a>
@@ -33,5 +32,5 @@
 			</div>
 			<% end_loop %>				  
 		</div>
-		<input type="hidden" name="PaymentMethodID" id="PaymentMethodID" value="$RelatedPaymentMethods($DeliveryTypeID,$PaymentMethodID).First.ID" />
+		<input type="text" name="PaymentMethodID" id="PaymentMethodID" value="$RelatedPaymentMethods($DeliveryTypeID,$PaymentMethodID).First.ID" />
 	</div>
