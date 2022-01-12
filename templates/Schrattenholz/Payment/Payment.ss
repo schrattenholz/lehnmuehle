@@ -3,7 +3,7 @@
 			<h3 class="accordion-heading">Zahlungsoptionen <span class="accordion-indicator"></span></h3>
 		</div>
 		<div class="accordion mb-4" id="paymenMethods">
-			<% loop $RelatedPaymentMethods($DeliveryTypeID,$PaymentMethodID) %>
+			<% loop $RelatedPaymentMethods($DeliveryTypeID,$Top.Basket.PaymentMethodID) %>
 			<div class="card">
 				<div class="card-header">
 				<h3 class="accordion-heading">
@@ -13,7 +13,7 @@
 					</a>
 				</h3>
 				</div>
-				<div class="collapse <% if $First %>show<% end_if %>" id="pM_$ID" data-parent="#paymenMethods">
+				<div class="collapse <% if $Top.Basket.PaymentMethodID == $ID || not $Top.Basket.PaymentMethodID && $First %>show<% end_if %>" id="pM_$ID" data-parent="#paymenMethods">
 				<div class="card-body">
 					<!--
 					<div class="custom-control custom-radio">
