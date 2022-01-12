@@ -32,5 +32,5 @@
 			</div>
 			<% end_loop %>				  
 		</div>
-		<input type="text" name="PaymentMethodID" id="PaymentMethodID" value="$RelatedPaymentMethods($DeliveryTypeID,$PaymentMethodID).First.ID" />
+		<input type="text" name="PaymentMethodID" style="display:none;" id="PaymentMethodID" value="$RelatedPaymentMethods($DeliveryTypeID,$PaymentMethodID).First.ID" />
 	</div>
