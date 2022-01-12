@@ -96,10 +96,10 @@
                 $Basket.AdditionalNotes
           </div>
 			 <div class="cz-sidebar-static rounded-lg box-shadow-lg ml-lg-auto mt-3">
-            <h2 class="h6 mb-4 text-center text-md-left"><i class="h6 text-body czi-home"></i>&nbsp;Addresse</h4>
+            <h2 class="h6 mb-4 text-center text-md-left"><i class="h6 text-body czi-home"></i>&nbsp;Adresse</h4>
                 <ul class="list-unstyled font-size-sm">
                   <li><span class="text-muted">Kontakt:&nbsp;</span>$CheckoutAddress.FirstName $CheckoutAddress.Surname</li>
-                  <li><span class="text-muted">Addresse:&nbsp;</span>$CheckoutAddress.Street, $CheckoutAddress.ZIP $CheckoutAddress.City</li>
+                  <li><span class="text-muted">Adresse:&nbsp;</span>$CheckoutAddress.Street, $CheckoutAddress.ZIP $CheckoutAddress.City</li>
                   <li><span class="text-muted">Telefon:&nbsp;</span>$CheckoutAddress.PhoneNumber</li>
 				  <li><span class="text-muted">E-Mail:&nbsp;</span>$CheckoutAddress.Email</li>
                 </ul>
@@ -113,10 +113,14 @@
                 </ul>
           </div>
 		  <div class="cz-sidebar-static rounded-lg box-shadow-lg ml-lg-auto mt-3">
-            <h2 class="h6 mb-4 text-center text-md-left"><i class="h6 text-body czi-package"></i>&nbsp;Zahlart</h4>
+            <h2 class="h6 mb-4 text-center text-md-left"><i class="h6 text-body czi-package"></i>&nbsp;Bezahlart</h2>
                 
                 <ul class="list-unstyled font-size-sm">
                   <li class="text-center text-md-left"><strong>$Basket.PaymentMethod.Title</strong></li>
+				  <% if $Basket.PaymentMethod.Template=="Schrattenholz\Payment\Templates\PaymentMethod_SEPA" %>
+				  <li class="text-center text-md-left"><strong>IBAN:</strong> $CheckoutAddress.IBAN_Hint</li>
+				  <li class="text-center text-md-left"><strong>BIC:</strong> $CheckoutAddress.BIC_Hint</li>
+				  <% end_if %>
                 </ul>
           </div>
 		 <% else %>
