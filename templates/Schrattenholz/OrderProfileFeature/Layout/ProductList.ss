@@ -25,7 +25,11 @@
 					<img class="card-img" src="$DefaultImage.Fill(400,266).URL" alt="$DefaultImage.Filename">
 				</a>
 					<div class="card-body">
-					<h2 class="h5"><a href="$Link">$MenuTitle.XML</a></h2>
+					<h2 class="h5">
+					<a href="$Link">$MenuTitle.XML</a></h2>									
+					<% if $ClassName=="Schrattenholz\\Order\\Product" %>
+						<% if $CaPrice %>ca. <% end_if %>$Top.formattedNumber($KiloPrice.Price) &euro;/$Unit.Shortcode
+					<% end_if %>				
 					
 					</div>
 				</div>
