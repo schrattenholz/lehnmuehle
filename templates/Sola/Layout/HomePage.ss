@@ -1,4 +1,4 @@
-	<% include Slider %>
+	<% include Schrattenholz\Slider\Includes\Slider %>
 	<% include CallToActions %>
    <!-- Banners-->
 <div class="spacer-light bg-light pt-5">

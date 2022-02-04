@@ -1,8 +1,20 @@
-
+<style>
+<% if $MainImage %>
+.headerbg{
+	background-image:url("$MainImage.ScaleWidth(2000).URL");
+	background-position:center center;
+	background-size:cover;
+	height:200px;
+}
+.headerbg .container{
+height:180px;
+}
+<% end_if %>
+</style>	
 <!-- Page Title (Shop)-->
 
-<div class="bg-dark pt-4">
-	<div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+<div class="bg-dark headerbg pt-4">
+	<div class="container d-lg-flex align-items-end justify-content-between py-2 py-lg-3">
 		<div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
 		 <% include BreadCrumbsMenu Design="-light" %>
         </div>
@@ -13,7 +25,7 @@
 </div>
     <!-- Page Content-->
 	
-<div class="container" id="product">
+<div class="container" id="p_$ID" data-productid="$ID" data-producttitle="$Title">
       <!-- Gallery + details-->
       <div class="bg-white  px-4 py-3 mb-5">
         <div class="px-lg-3">
@@ -50,6 +62,7 @@
 				<a class="cz-thumblist-item <% if $First %>active<% end_if %>" href="#ProductImage_$ID"><img src="$Fill(100,100).URL" alt="$Filename"></a>
 				<% end_loop %>
 				<% end_if %>
+																			   
 				<!--
 				<a class="cz-thumblist-item video-item" href="https://www.youtube.com/watch?v=1vrXpMLLK14">
 					<div class="cz-thumblist-item-text">
@@ -71,7 +84,7 @@
 			
                         <!-- Product details-->
 			<div class="col-lg-6 pt-4 pt-lg-4 offset-lg-1">
-				<div class="ml-auto pb-3">
+				<div class="product-details ml-auto pb-3">
 
 					<div classs="mb-3">
 						<span id="single_price" class="h3 font-weight-normal text-accent mr-1">

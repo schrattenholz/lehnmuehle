@@ -22,7 +22,7 @@
 					<% end_if %>
 				<% end_if %>
 				<a class="d-block overflow-hidden rounded-lg" href="$Link">
-					<img class="card-img" src="$CoverImage.Fill(400,266).URL" alt="$CoverImage.Filename">
+					<img class="card-img" src="$DefaultImage.Fill(400,266).URL" alt="$DefaultImage.Filename">
 				</a>
 					<div class="card-body">
 					<h2 class="h5"><a href="$Link">$MenuTitle.XML</a></h2>
