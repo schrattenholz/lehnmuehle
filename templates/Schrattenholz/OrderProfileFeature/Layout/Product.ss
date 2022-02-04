@@ -116,9 +116,6 @@ height:180px;
 
         </div>
       </div>
-	  
-
-	  
 	  </div>
 	  		<div class="bg-light p-5">
 			<div class="container">
