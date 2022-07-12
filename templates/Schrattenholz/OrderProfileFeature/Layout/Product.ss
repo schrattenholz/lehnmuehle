@@ -87,17 +87,7 @@ height:180px;
 				<div class="product-details ml-auto pb-3">
 
 					<div classs="mb-3">
-						<span id="single_price" class="h3 font-weight-normal text-accent mr-1">
 						<% include Schrattenholz\OrderProfileFeature\Includes\ProductPrice %>
-						<% if not $ShowBasePrice %>*<% end_if %>
-						</span>
-						<% if $ShowBasePrice %>
-							<span>($formattedNumber($KiloPrice.Price) &euro;/$Unit.Shortcode)</span>*
-						<% end_if %>
-						<span class="productbadge">
-							$getProductBadge(0)
-						</span>
-
 					</div>
 
 					<% include Schrattenholz\OrderProfileFeature\Includes\Product_Shopping %>
