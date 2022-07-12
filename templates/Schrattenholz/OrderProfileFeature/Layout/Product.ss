@@ -39,7 +39,7 @@ height:180px;
 					<% loop $ProductImages.Sort('SortOrder') %>
 					  <div class=" <% if $First %>active<% end_if %>" id="ProductImage_$ID">
 					  <% if $Top.ShowQualityLabel %>
-					  <div class="picLabel"><img src="/_resources/themes/sehnenmuehle/img/bioland.png" /></div>
+					 <!-- <div class="picLabel"><img src="/_resources/themes/sehnenmuehle/img/bioland.png" /></div>-->
 					  <% end_if %>
 						  <img class="" src="$ScaleWidth(600).URL"  alt="$Filename">
 						
