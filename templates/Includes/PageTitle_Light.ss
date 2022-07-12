@@ -45,6 +45,7 @@
           <% include BreadCrumbs Design="" %>
         </div>
         <div class="order-lg-1 pr-lg-4 text-center text-lg-left">
+		<% if $Headline %><h1 class="h6 bg-transparent text-light  mb-0">$MenuTitle.XML</h1><% end_if %>
           <h1 class="h3 text-light  mb-0"><% if $Headline %>$Headline<% else %>$MenuTitle.XML<% end_if %></h1>
         </div>
       </div>
