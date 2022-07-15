@@ -43,6 +43,7 @@
 						<% end_if %>
 					<!-- Ende Abholtage -->
 					<!-- Lieferorte -->
+					
 					<% if $getCities($Top.CurrentOrderCustomerGroup.ID) && $Top.DeliveryIsActive %>
 					<div class="col-12 col-md-6  font-size-sm" data-pbe_id="$ID" id="pbe_2">
 						<h4 class="font-size-md">Lieferorte</h4>
