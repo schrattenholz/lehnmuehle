@@ -55,12 +55,12 @@
                       $BasketNavList
 			  </div>
 			  <% if $SiteConfig.Facebook %>
-			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle ml-3 d-none d-md-block" href="$SiteConfig.Facebook" id="facebook_icon">
+			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle ml-3 d-none d-md-block" href="$SiteConfig.Facebook"  target="_blank" id="facebook_icon">
 				<i class="navbar-tool-icon czi-facebook"></i>
 			</a>
 			<% end_if %>
 						  <% if $SiteConfig.Instagram %>
-			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle ml-3 d-none d-md-block" href="$SiteConfig.Instagram" id="instagram_icon">
+			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle ml-3 d-none d-md-block" href="$SiteConfig.Instagram" target="_blank" id="instagram_icon">
 				<i class="navbar-tool-icon czi-instagram"></i>
 			</a>
 			<% end_if %>
