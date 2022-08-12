@@ -62,7 +62,6 @@ height:180px;
 				<a class="cz-thumblist-item <% if $First %>active<% end_if %>" href="#ProductImage_$ID"><img src="$Fill(100,100).URL" alt="$Filename"></a>
 				<% end_loop %>
 				<% end_if %>
-																			   
 				<!--
 				<a class="cz-thumblist-item video-item" href="https://www.youtube.com/watch?v=1vrXpMLLK14">
 					<div class="cz-thumblist-item-text">
@@ -72,28 +71,20 @@ height:180px;
 				-->
 				</div>
               </div>
-			 
-                
-			
 				<% if not $ProductImages %>
 					<img src="$Fill(100,100).URL" alt="$Filename">
 				<% end_if %>
                 <!-- Sharing-->
 				<% include Schrattenholz\OrderProfileFeature\Includes\Product_Sharing %>
             </div>
-			
-                        <!-- Product details-->
+            <!-- Product details-->
 			<div class="col-lg-6 pt-4 pt-lg-4 offset-lg-1">
 				<div class="product-details ml-auto pb-3">
-
-					<div classs="mb-3">
+					<div classs="mb-3"> 
 						<% include Schrattenholz\OrderProfileFeature\Includes\ProductPrice %>
 					</div>
-
 					<% include Schrattenholz\OrderProfileFeature\Includes\Product_Shopping %>
 				</div>
-                
-				
               </div>
             </div>
           </div>
@@ -116,6 +107,5 @@ height:180px;
 				</div>
 			</div>
 		</div>
-	  
     </div>
 <% include Schrattenholz\OrderProfileFeature\Layout\Product_JavaScript %>
