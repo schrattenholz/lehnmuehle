@@ -54,9 +54,16 @@
               <div class="navbar-tool dropdown ml-3 basket-nav-list">
                       $BasketNavList
 			  </div>
-			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle ml-3 d-none d-md-block" href="$OrderConfig.Basket.Link" id="facebook_icon">
+			  <% if $SiteConfig.Facebook %>
+			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle ml-3 d-none d-md-block" href="$SiteConfig.Facebook" id="facebook_icon">
 				<i class="navbar-tool-icon czi-facebook"></i>
 			</a>
+			<% end_if %>
+						  <% if $SiteConfig.Instagram %>
+			  <a class="navbar-tool-icon-box bg-secondary dropdown-toggle ml-3 d-none d-md-block" href="$SiteConfig.Instagram" id="instagram_icon">
+				<i class="navbar-tool-icon czi-instagram"></i>
+			</a>
+			<% end_if %>
             </div>
           </div>
         </div>
