@@ -9,7 +9,7 @@
 <body class="class="toolbar-enabled $ClassName.ShortName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include Modal_SignIn %>
 <% include Modal_Info %>
-<% include Header %>
+<% include HeaderInactive %>
 $Layout
 <% include Footer %>
 <% include Schrattenholz\OrderProfileFeature\Includes\ShopFields %>
@@ -18,6 +18,6 @@ $Layout
 <% include Toasts %>
 <% require themedJavascript('vendor.min') %>
 <% include Javascript %>
-<% include Schrattenholz\Order\Includes\OrderIncludes %>
+<% include OrderIncludes %>
 </body>
 </html>
