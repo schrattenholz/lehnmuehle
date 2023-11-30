@@ -47,7 +47,7 @@
                   <label class="custom-control-label" for="si-remember">Mich erinnern</label>
                 </div>
 				-->
-				<a class="font-size-sm" href="{$BaseHref}/Security/lostpassword">Passwort vergessen?</a>
+				<a class="font-size-sm" href="{$BaseHref}Security/lostpassword">Passwort vergessen?</a>
               </div>
               <button class="btn btn-primary btn-block btn-shadow" type="submit">Anmelden</button>
             </form>
