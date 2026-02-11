@@ -17,9 +17,11 @@
 	"extra": {
         "expose": [
             "css",
-            "img",
+            "images",
             "javascript",
-            "fonts"
+			"vendor",
+			"templates",
+			"fonts"
         ]
 	}
 }
