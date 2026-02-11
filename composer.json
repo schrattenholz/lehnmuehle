@@ -19,7 +19,6 @@
             "css",
             "img",
             "javascript",
-			"vendor",
 			"templates",
 			"fonts"
         ]
