@@ -31,7 +31,7 @@
 				<% else_if $MainImage %>
 					$MainImage.Fill(400,266).URL
 				<% else %>
-					$BaseHref/public/resources/vendor/schrattenholz/blog/theme/images/default.jpg
+					$BaseHref$resourceURL('schrattenholz/blog:theme/images/default.jpg')
 				<% end_if %>" alt="Post">
 			<% if not $Top.NotClickable %>
 				</a>
