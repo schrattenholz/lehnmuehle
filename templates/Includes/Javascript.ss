@@ -1,4 +1,4 @@
-<script type="text/javascript" src="$ThemeDir/javascript/theme.min.js"></script>
+<script type="text/javascript" src="$themedResourceURL('javascript/theme.min.js')"></script>
 <script>
 
 $.fn.serializeObject = function()
@@ -21,5 +21,5 @@ $.fn.serializeObject = function()
 </script>
  <% if $ClassName=="UserDefinedForm" %>
      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCueUA7hwyCVelrxdBpnil1ptUx9GocvZw"></script>
-	<script type="text/javascript" src="$ThemeDir/javascript/gmap3.min.js"></script>
+	<script type="text/javascript" src="$themedResourceURL('javascript/gmap3.min.js')"></script>
  <% end_if %>

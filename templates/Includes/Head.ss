@@ -18,7 +18,7 @@
 	<% else_if $CoverImage %>
 		<meta property="og:image" content="{$BaseHref}$CoverImage.URL">
 	<% else %>
-		<meta property="og:image" content="$BaseHref$ThemeDir/images/default.jpg">
+		<meta property="og:image" content="$BaseHref$themedResourceURL('images/default.jpg')">
 	<% end_if %>
 	
 	<!--[if lt IE 9]>
@@ -29,11 +29,11 @@
 	<![endif]-->
 	<% require themedCSS('vendor.min') %>
 	<% require themedCSS('theme.min') %>
-	<link rel="shortcut icon" href="$BaseHref$ThemeDir/img/favicon/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="$BaseHref$ThemeDir/img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="$BaseHref$ThemeDir/img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="$BaseHref$ThemeDir/img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="$BaseHref$ThemeDir/img/favicon/favicon/manifest.json">
-	<link rel="mask-icon" href="$BaseHref$ThemeDir/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="$BaseHref$themedResourceURL('img/favicon/favicon.ico')" />
+	<link rel="apple-touch-icon" sizes="180x180" href="$BaseHref$themedResourceURL('img/favicon/apple-touch-icon.png')">
+	<link rel="icon" type="image/png" sizes="32x32" href="$BaseHref$themedResourceURL('img/favicon/favicon-32x32.png')">
+	<link rel="icon" type="image/png" sizes="16x16" href="$BaseHref$themedResourceURL('img/favicon/favicon-16x16.png')">
+	<link rel="manifest" href="$BaseHref$themedResourceURL('img/favicon/favicon/manifest.json')">
+	<link rel="mask-icon" href="$BaseHref$themedResourceURL('img/favicon/safari-pinned-tab.svg')" color="#5bbad5">
 
 </head>
