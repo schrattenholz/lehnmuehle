@@ -13,7 +13,7 @@
 		<div class="row">
 			<div class="col pt-4 pt-md-0">
 				<div class="row no-gutters justify-content-between">
-					<% loop $LimitedEntries.Limit($Limit) %>
+					<% loop $LimitedEntries.Limit($LimitOfEntries) %>
 					 <div class="col-lg-3 col-3 px-0 px-sm-2 pr-md-0">
 						<!-- Card contentbased -->
 						<div class="card border-primary text-left overflow-hidden <% if not $DefaultImage %><% if not $Last %>mr-5<% end_if %> flex-fill <% end_if %><% if $ColorSetID %>colorSet{$ColorSetID} <% end_if %>" >
