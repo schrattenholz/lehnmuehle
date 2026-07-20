@@ -11,7 +11,7 @@
 					</div>
 				<% else %>
 				
-				<% loop BasketDeliverySetup($ID,$v).DeliverySetup %>
+				<% with BasketDeliverySetup($ID,$v).DeliverySetup %>
 					<% if $Up.DeliverySpecial %>
 					<div class="row">
 					<div class="col-12 font-size-sm">
@@ -78,7 +78,7 @@
 					<!- Ende Lieferorte -->
 					</div>
 					
-					<% end_loop %>
+					<% end_with %>
 					<% end_if %>
 					</div>
 					
