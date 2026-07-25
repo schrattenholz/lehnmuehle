@@ -9,18 +9,17 @@
 				<div class="d-sm-flex justify-content-between align-items-center bg-secondary p-4 rounded-lg mb-grid-gutter">
 					<div class="media align-items-center">
 						<div class="img-thumbnail rounded-circle position-relative" style="width: 6.375rem;">
-							<span class="badge badge-warning" data-toggle="tooltip" title="" data-original-title="Reward points">$ClientOrders.Count</span>
+							<span class="badge badge-warning" data-toggle="tooltip" title="" data-original-title="Bestellungen">$ClientOrders.Count</span>
 							<img class="rounded-circle" src="img/shop/account/avatar.jpg" alt="$CurrentMember.FirstName $CurrentMember.Lastname">
 						</div>
 						<div class="media-body pl-3">
 							<h3 class="font-size-base mb-0">$CurrentMember.FirstName $CurrentMember.Surname</h3><span class="text-accent font-size-sm">$CurrentMember.Email</span>
 						</div>
 					</div>
-					<a class="btn btn-dark btn-sm btn-shadow mt-3 mt-sm-0" href="{$OrderConfig.AcountRoot.Link}profil"><i class="czi-edit mr-2"></i>Benutzerdaten bearbeiten</a>
+					<a class="btn btn-light btn-sm btn-shadow mt-3 mt-sm-0" href="{$OrderConfig.AcountRoot.Link}profil"><i class="czi-edit mr-2"></i>Benutzerdaten bearbeiten</a>
 				</div>
 				 <% end_if %>
 				
-
 						<% if $Basket.ProductContainers %>
 							$RegistrationForm.Fields
 						<% else %>
@@ -34,13 +33,13 @@
 				  <!-- Navigation (desktop)-->
 					<div class="d-none d-lg-flex pt-4 mt-3">
 						<div class="w-50 pr-3">
-							<a href="$OrderConfig.Basket.Link" name="action_back" value="Zurück zum Warenkorb" class="action action btn btn-secondary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_back">
-							<i class="czi-arrow-left mt-sm-0 mr-1"></i><span class="d-none d-sm-inline">Zurück zum Warenkorb</span><span class="d-inline d-sm-none">Zurück</span>
+							<a href="$CheckoutChain.Last.Link" name="action_back" value="Zurück zum Warenkorb" class="action action btn btn-secondary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_back">
+							<i class="czi-arrow-left mt-sm-0 mr-1"></i><span class="d-none d-sm-inline">Zurück zu $CheckoutChain.Last.MenuTitle</span><span class="d-inline d-sm-none">Zurück</span>
 							</a>
 						</div>
 						<div class="w-50 pl-2">
-							<button type="submit" name="action_continue" value="Weiter zu den Lieferoptionen" class="action action btn btn-primary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_continue">
-								<span class="d-none d-sm-inline">Weiter zu den Lieferoptionen</span><span class="d-inline d-sm-none">Weiter</span><i class="czi-arrow-right mt-sm-0 ml-1"></i></a>
+							<button type="submit" name="action_continue" value="Weiter zu den $CheckoutChain.Next.MenuTitle" class="action action btn btn-primary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_continue">
+								<span class="d-none d-sm-inline">Weiter zu $CheckoutChain.Next.MenuTitle</span><span class="d-inline d-sm-none">Weiter</span><i class="czi-arrow-right mt-sm-0 ml-1"></i></a>
 							</button>
 						</div>
 					</div>
@@ -60,9 +59,9 @@
 
 				<div class="col-12 d-lg-none">
 				  <div class="d-flex pt-4 mt-3">
-					<div class="w-50 pr-3"><a class="btn btn-secondary btn-block" href="$OrderConfig.Basket.Link"><i class="czi-arrow-left mt-sm-0 mr-1"></i><span class="d-none d-sm-inline">Zurück</span><span class="d-inline d-sm-none">Zurück</span></a></div>
+					<div class="w-50 pr-3"><a class="btn btn-secondary btn-block" href="$CheckoutChain.Last.Link"><i class="czi-arrow-left mt-sm-0 mr-1"></i><span class="d-none d-sm-inline">Zurück</span><span class="d-inline d-sm-none">Zurück</span></a></div>
 					<div class="w-50 pl-2">
-					<button type="submit" name="action_continue" value="Weiter zu den Lieferoptionen" class="action action btn btn-primary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_continue_mobile">
+					<button type="submit" name="action_continue" value="Weiter zu $CheckoutChain.Next.MenuTitle" class="action action btn btn-primary btn-shadow mb-2 mr-1 col-12" id="OrderProfileFeature_RegistrationForm_useraccounttab_action_continue_mobile">
 					<span class="d-none d-sm-inline">Weiter</span><span class="d-inline d-sm-none">Weiter</span><i class="czi-arrow-right mt-sm-0 ml-1"></i></a>
 							</button></div>
 				  </div>
@@ -73,8 +72,36 @@
 	</div>
 	
 <script>
+jQuery( document ).ready(function() {
+jQuery("#useraccounttab_Benutzerdaten").addClass("active show");
+jQuery("#tab-useraccounttab_Benutzerdaten").addClass("active");
+	var createUserAccountCK=jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_CreateUserAccount");
+	createUserAccountCK.on("change", function(){
+		if(jQuery(this).prop("checked")==true){
+			var label=jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_Street_Holder label");
+			label.html(label.html()+"*");
+			jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_Street").attr("required","required");
+			var label=jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_ZIP_Holder label");
+			label.html(label.html()+"*");
+			jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_ZIP").attr("required","required");
+			var label=jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_City_Holder label");
+			label.html(label.html()+"*");
+			jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_City").attr("required","required");
+		}else{
+			var label=jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_Street_Holder label");
+			label.html(label.html().slice(0, -1));
+			jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_Street").removeAttr("required");
+			var label=jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_ZIP_Holder label");
+			label.html(label.html().slice(0, -1));
+			jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_ZIP").removeAttr("required");
+			var label=jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_City_Holder label");
+			label.html(label.html().slice(0, -1));
+			jQuery("#OrderProfileFeature_RegistrationForm_useraccounttab_City").removeAttr("required");
+		}
 
+	});
 
+});
 function loginMember(){
 	console.log("loginMember");
 	var pageLink='$Link';
@@ -122,14 +149,14 @@ function loginMember(){
 	});
 
 }
-function checkoutAddress(nextLink,pageLink){
-	var nextLink='$LinkCheckoutDelivery';
+function checkoutAddress(nextLink,pageLink){	
+	var nextLink='$CheckoutChain.Next.Link';
 	var pageLink='$Link';
-if(jQuery('#CreateUserAccount').is(":checked")){
-	jQuery('#CreateUserAccount_Val').val(1);
-}else{
-jQuery('#CreateUserAccount_Val').val(0);
-}
+	if(jQuery('#OrderProfileFeature_RegistrationForm_useraccounttab_CreateUserAccount').is(":checked")){
+		jQuery('#CreateUserAccount_Val').val(1);
+	}else{
+		jQuery('#CreateUserAccount_Val').val(0);
+	}
 	jQuery('input').each(function(){
 		$(this).removeAttr('disabled');
 	});
