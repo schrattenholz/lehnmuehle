@@ -16,11 +16,11 @@
     </section>
 </div>
 <% loop ContentObjects.Sort('SortID') %>
-	<% if not $First %>
-			
+
+	<% if not $IsFirst %>	
+	<h1>$Title $ID $Pos</h1>
 			$renderIT
-			
-		<% end_if %>
-	<% end_loop %>
+	<% end_if %>
+<% end_loop %>
 
 

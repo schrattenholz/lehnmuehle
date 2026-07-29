@@ -6,8 +6,8 @@
 		<% loop $CrumbsList(false) %>
 			<li class="nav-item <% if $getPage.Children && $getPage.ClassName="Schrattenholz\Order\ProductList"  %>dropdown<% end_if %> text-nowrap" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 
-				<% if not $Last && not $First %>
-					<a class="breadcrumb-link breadcrumb-$Pos text-white nav-link <% if $getPage.Children && $getPage.ClassName="Schrattenholz\Order\ProductList" %>dropdown-toggle<% end_if %>" <% if $getPage.Children && $getPage.ClassName="Schrattenholz\Order\ProductList"  %>data-toggle="dropdown" <% end_if %>itemtype="http://schema.org/Thing" itemprop="item" href="$Link"<% if $Last %> aria-current="page"<% end_if %>>
+				<% if not $IsLast && not $IsFirst %>
+					<a class="breadcrumb-link breadcrumb-$Pos text-white nav-link <% if $getPage.Children && $getPage.ClassName="Schrattenholz\Order\ProductList" %>dropdown-toggle<% end_if %>" <% if $getPage.Children && $getPage.ClassName="Schrattenholz\Order\ProductList"  %>data-toggle="dropdown" <% end_if %>itemtype="http://schema.org/Thing" itemprop="item" href="$Link"<% if $IsLast %> aria-current="page"<% end_if %>>
 						<span itemprop="name">$Title</span>
 					</a>
 					<% if $getPage.Children && $getPage.ClassName="Schrattenholz\Order\ProductList"  %>

@@ -16,7 +16,7 @@
 					<% loop $LimitedEntries.Limit($LimitOfEntries) %>
 					 <div class="col-lg-3 col-3 px-0 px-sm-2 pr-md-0">
 						<!-- Card contentbased -->
-						<div class="card border-primary text-left overflow-hidden <% if not $DefaultImage %><% if not $Last %>mr-5<% end_if %> flex-fill <% end_if %><% if $ColorSetID %>colorSet{$ColorSetID} <% end_if %>" >
+						<div class="card border-primary text-left overflow-hidden <% if not $DefaultImage %><% if not $IsLast %>mr-5<% end_if %> flex-fill <% end_if %><% if $ColorSetID %>colorSet{$ColorSetID} <% end_if %>" >
 						<% if $DeepLink || $Link %><a href="<% if $DeepLink %>$DeepLink.Link<% else_if $Link %>$Link<% end_if %>"><% end_if %>
 						  <div class="card-body <% if $DefaultImage %>p-0<% end_if %>">
 						   $DefaultImage.Fill(800,500)

@@ -46,7 +46,7 @@
 <% end_if %>
 <% if $Content || Form %>
 	<% loop ContentObjects.Sort('SortID') %>
-	<% if not $First %>
+	<% if not $IsFirst %>
 
 			$renderIT
 
