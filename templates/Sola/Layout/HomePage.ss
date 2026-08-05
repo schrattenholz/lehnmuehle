@@ -16,9 +16,7 @@
     </section>
 </div>
 <% loop ContentObjects.Sort('SortID') %>
-
 	<% if not $IsFirst %>	
-	<h1>$Title $ID $Pos</h1>
 			$renderIT
 	<% end_if %>
 <% end_loop %>
