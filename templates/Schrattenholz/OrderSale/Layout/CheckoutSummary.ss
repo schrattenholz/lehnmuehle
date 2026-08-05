@@ -94,7 +94,7 @@
 					 <input type="checkbox" name="datenschutz" id="datenschutz" style="margin-top:-2px" required />
 					 <label for="datenschutz">Ich stimme zu, dass meine Angaben aus dem Bestellprozess zur Bearbeitung meiner Bestellung erhoben und verarbeitet werden. Die Daten werden ausschließlich für die Bearbeitung der Bestellung und der dazu nötigen Prozesse verwendet.</label> 
 					 </div></div>
-					 <p>Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a href="{$BaseHref}datenschutzerklärung" >Datenschutzerklärung</a>.</p>
+					 <p>Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a href="{$BaseHref}/datenschutzerklärung" >Datenschutzerklärung</a>.</p>
 					 
 					<button id="bestellenBtn" type="submit" class="btn" value="Kostenpflichtig bestellen"  link="$LinkCheckoutFinal" >Verbindlich bestellen</button>
 					&nbsp;&nbsp;<a class="btn" href="$LinkCheckoutAddress">Zur&uuml;ck</a> 

@@ -51,7 +51,7 @@
 		  <input class="custom-control-input"  type="checkbox" name="datenschutz" id="datenschutz" style="margin-top:-2px" required />
 		  
 					 <label class="custom-control-label" for="datenschutz">Ich stimme zu, dass meine Angaben aus dem Bestellprozess zur Bearbeitung meiner Bestellung erhoben und verarbeitet werden. Die Daten werden ausschließlich für die Bearbeitung der Bestellung und der dazu nötigen Prozesse verwendet.</label> 
-					 <p class="font-size-sm">Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a target="_blank" href="{$BaseHref}datenschutzerklaerung" >Datenschutzerklärung</a>.</p>
+					 <p class="font-size-sm">Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a target="_blank" href="{$BaseHref}/datenschutzerklaerung" >Datenschutzerklärung</a>.</p>
 		  </div>
 		  
 		

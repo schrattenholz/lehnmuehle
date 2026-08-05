@@ -7,11 +7,11 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="tel:$Phone"><i class="czi-support text-muted mr-2"></i>$SiteConfig.Phone</a></li>  
 			  <li><a class="dropdown-item" href="mailto:$SiteConfig.Email"><i class="czi-mail text-muted mr-2"></i>$SiteConfig.Email</a></li>
-			  <li><a class="dropdown-item" href="{$BaseHref}eplr-eulle/"><i class="czi-star text-muted mr-2"></i>EPLR EULLE</a></li>
+			  <li><a class="dropdown-item" href="{$BaseHref}/eplr-eulle/"><i class="czi-star text-muted mr-2"></i>EPLR EULLE</a></li>
               <!--<li><a class="dropdown-item" href="order-tracking.html"><i class="czi-location text-muted mr-2"></i>Order tracking</a></li>-->
             </ul>
           </div>
-          		  <div class="topbar-text text-nowrap d-none d-md-inline-block ml-3"><i class="czi-star"></i><span class="text-muted mr-1">Förderung</span><a class="topbar-link" href="{$BaseHref}eplr-eulle/">EPLR EULLE</a></div>
+          		  <div class="topbar-text text-nowrap d-none d-md-inline-block ml-3"><i class="czi-star"></i><span class="text-muted mr-1">Förderung</span><a class="topbar-link" href="{$BaseHref}/eplr-eulle/">EPLR EULLE</a></div>
           <div class="topbar-text text-nowrap d-none d-md-inline-block"><i class="czi-support"></i><span class="text-muted mr-1">Telefon</span><a class="topbar-link" href="tel:$SiteConfig.Phone">$SiteConfig.Phone</a></div>		  
 		  <div class="topbar-text text-nowrap d-none d-md-inline-block ml-3"><i class="czi-mail"></i><span class="text-muted mr-1">E-Mail</span><a class="topbar-link" href="mailto:$SiteConfig.Email">$SiteConfig.Email</a></div>
           <!--
@@ -47,7 +47,7 @@
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
       <div class="navbar-sticky bg-light">
         <div class="navbar navbar-expand-lg navbar-light">
-          <div class="container"><a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0 flex-grow-1" href="{$BaseHref}home" style="min-width: 7rem;"><img width="142" src="$OrderConfig.Logo.URL" alt="$SiteConfig.BusinessName"/></a><a class="navbar-brand d-sm-none mr-2" href="{$BaseHref}home" style="min-width: 4.625rem;"><img style="max-width:140px;" src="$OrderConfig.Logo.URL" alt="$SiteConfig.BusinessName"/></a>
+          <div class="container"><a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0 flex-grow-1" href="{$BaseHref}/home" style="min-width: 7rem;"><img width="142" src="$OrderConfig.Logo.URL" alt="$SiteConfig.BusinessName"/></a><a class="navbar-brand d-sm-none mr-2" href="{$BaseHref}/home" style="min-width: 4.625rem;"><img style="max-width:140px;" src="$OrderConfig.Logo.URL" alt="$SiteConfig.BusinessName"/></a>
 
 
           </div>

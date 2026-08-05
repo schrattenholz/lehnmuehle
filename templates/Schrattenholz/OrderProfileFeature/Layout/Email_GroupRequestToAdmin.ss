@@ -38,9 +38,9 @@ table {
 möchte sich als Wiederverkäufer registrieren.
 
 Möchten Sie den Kunden als Wiederverkäufer bestätigen?
-<a href="{$BaseHref}groupconfirmation/confirm/$CheckoutAddress.ID">Als Wiederverkäufer bestätigen</a>
+<a href="{$BaseHref}/groupconfirmation/confirm/$CheckoutAddress.ID">Als Wiederverkäufer bestätigen</a>
 Möchten Sie das der Kunde weiterhin as Prvatkunde geführt wird?
-<a href="{$BaseHref}groupconfirmation/deny/$CheckoutAddress.ID">Als Privatkunden führen</a>
+<a href="{$BaseHref}/groupconfirmation/deny/$CheckoutAddress.ID">Als Privatkunden führen</a>
 </p>
 <p>Der Kunde wird nach der Bestätigun per E-Mail informiert.
 		  <div>

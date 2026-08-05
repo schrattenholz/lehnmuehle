@@ -37,7 +37,7 @@ table {
 <p>
 wenn du dich auf der Webseite von $SiteConfig.Title registriert hast, kannst du die Registrierung nun abschließen.
 
-Klicke hierzu auf diesen Link: <a href="{$BaseHref}doubleoptin/confirm/$CheckoutAddress.ID">Registrierung abschließen</a></p>
+Klicke hierzu auf diesen Link: <a href="{$BaseHref}/doubleoptin/confirm/$CheckoutAddress.ID">Registrierung abschließen</a></p>
 <p>Wenn du dich nicht registriert hast, kannst du diese E-Mail ignorieren, die Registrierung findet dann nicht statt!</p>
 
 <p>Herzliche Grüße</br>Das $SiteConfig.Title Team 

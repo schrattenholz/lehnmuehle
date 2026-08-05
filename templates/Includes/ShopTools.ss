@@ -42,7 +42,7 @@
 							</li>
 							<% end_loop %>
 							<li class="dropdown">
-								<a class="btn btn-primary btn-sm" style="margin:.425rem 1.3rem;" href="{$BaseHref}home/logoutUser">Abmelden</a>
+								<a class="btn btn-primary btn-sm" style="margin:.425rem 1.3rem;" href="{$BaseHref}/home/logoutUser">Abmelden</a>
 							</li>
 						</ul>
 					

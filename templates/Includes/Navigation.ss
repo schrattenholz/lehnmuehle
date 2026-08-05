@@ -24,7 +24,7 @@
 				  <% end_if %>
                 </li>
 				<% else %>
-					 <li class="nav-item <% if $isCurrent || $isSection %>active<% end_if %>"><a class="nav-link <% if $IsFirst %>pl-0 <% end_if %>" href="<% if $URLSegment=="home" || $URLSegment=="" %>{$BaseHref}home/<% else %>$Link<% end_if %>" title="$Title.XML">$MenuTitle.XML</a></li>
+					 <li class="nav-item <% if $isCurrent || $isSection %>active<% end_if %>"><a class="nav-link <% if $IsFirst %>pl-0 <% end_if %>" href="<% if $URLSegment=="home" || $URLSegment=="" %>{$BaseHref}/home/<% else %>$Link<% end_if %>" title="$Title.XML">$MenuTitle.XML</a></li>
 				<% end_if %>
 			  <% end_loop %>
               </ul>

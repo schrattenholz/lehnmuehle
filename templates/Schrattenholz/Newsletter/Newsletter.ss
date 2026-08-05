@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="{$BaseHref}/tsNewsletter/theme/css/layout.css" type="text/css" rel="stylesheet">
 <link href="{$BaseHref}{$themedResourceURL('css/layout.css')}" type="text/css" rel="stylesheet">
-<script src="{$BaseHref}tsNewsletter/js/jquery-1.8.3.js" type="text/javascript"></script>
+<script src="{$BaseHref}/tsNewsletter/js/jquery-1.8.3.js" type="text/javascript"></script>
 <title>Newsletter-Verwaltung</title>
 </head>
 

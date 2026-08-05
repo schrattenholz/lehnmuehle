@@ -35,11 +35,11 @@
 					<h3 class="widget-title  text-light">Links</h3>
 					<ul class="list-unstyled">
 						<li class="widget-list-item text-white opacity-70">DE-&Ouml;KO-006</li>
-						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}informationen/datenschutz" >Datenschutz</a></li>
-						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}informationen/impressum">Impressum</a></li>
-						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}informationen/agb">AGB</a></li>
-						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}informationen/widerrufsrecht">Widerrufsrecht</a></li>
-						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}kontakt">Kontakt</a></li>
+						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}/informationen/datenschutz" >Datenschutz</a></li>
+						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}/informationen/impressum">Impressum</a></li>
+						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}/informationen/agb">AGB</a></li>
+						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}/informationen/widerrufsrecht">Widerrufsrecht</a></li>
+						<li class="widget-list-item"><a class="widget-list-link" href="{$BaseHref}/kontakt">Kontakt</a></li>
 					</ul>
 				</div>
 			</div>

@@ -124,7 +124,7 @@ border:0;
 		 <div class="span12" style="margin-left:0;">
 		 <p>
 		 <input type="checkbox" name="agb" id="agb" style="margin-top:-2px" />
-		 <span class="checkbox">Ich habe die <a href="{$BaseHref}agb" target="_blank">Allgemeinen Geschäftsbedingungen</a> gelesen und verstanden.</span>
+		 <span class="checkbox">Ich habe die <a href="{$BaseHref}/agb" target="_blank">Allgemeinen Geschäftsbedingungen</a> gelesen und verstanden.</span>
 		 </p>
 	<input type="button" id="bestellenBtn" class="btn" value="Kostenpflichtig bestellen" disabled />
 	</div>
