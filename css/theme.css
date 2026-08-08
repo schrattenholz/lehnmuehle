@@ -16179,7 +16179,7 @@ html:not([dir=rtl]) .cz-range-slider-ui.noUi-horizontal .noUi-handle {
 
 .product-badge.product-not-available {
   background-color: #dd2a21;
-  color: #4b566b;
+  color: #f3f5f9;
 }
 
 .product-badge.product-not-available::after {
