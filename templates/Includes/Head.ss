@@ -5,9 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
-	<meta name="keywords" content="<% if $Keywords %>$Keywords<% else %> Biolandhof Sehnenmühle, Bioland, Rindfleisch, Schweinefeisch, Eier, Konserven, Hunsrück, regional<% end_if %>">
+	<%-- Kein meta keywords mehr: das Feld $Keywords existiert in diesem Projekt
+	     gar nicht, die Bedingung war also immer falsch und ausgeliefert wurde
+	     stets der Fallback -- die Stichworte eines *anderen* Hofes
+	     (Biolandhof Sehnenmuehle). Suchmaschinen werten meta keywords ohnehin
+	     nicht aus; statt den Text zu korrigieren faellt das Tag weg. --%>
 	<meta property="og:description" content="$Content.XML">
-	<link rel=”canonical” href=”https://biolandhof-sehnenmuehle.de/$URLSegment”/>
+	<%-- Canonical zeigte auf biolandhof-sehnenmuehle.de, also auf eine fremde
+	     Domain -- fuer Suchmaschinen die Ansage "der eigentliche Inhalt steht
+	     woanders". Zusaetzlich waren die Anfuehrungszeichen typografisch (”),
+	     wodurch das Tag vermutlich ohnehin ignoriert wurde. Jetzt die
+	     absolute Adresse der Seite selbst. --%>
+	<link rel="canonical" href="$AbsoluteLink">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="<% if $Link=="/home/" %>$BaseHref<% else %>$BaseHref$Link<% end_if %>">
 	<meta property="og:title" content="$MenuTitle.XML">
@@ -36,4 +45,5 @@
 	<link rel="manifest" href="$BaseHref$themedResourceURL('img/favicon/favicon/manifest.json')">
 	<link rel="mask-icon" href="$BaseHref$themedResourceURL('img/favicon/safari-pinned-tab.svg')" color="#5bbad5">
 
+	<% include SchemaOrg %>
 </head>
