@@ -29,7 +29,7 @@
             <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
               <div class="form-group">
                 <label for="si-email">E-Mail-Adresse</label>
-                <input class="form-control" type="email" name="UserAccountEmail" id="UserAccountEmail" placeholder="hallo@sola-soft.de" required>
+                <input class="form-control" type="email" name="UserAccountEmail" id="UserAccountEmail" required>
                 <div class="invalid-feedback">Bitte geben Sie Ihre E-Mail-Adresse ein.</div>
               </div>
               <div class="form-group">
