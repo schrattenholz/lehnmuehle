@@ -11,7 +11,7 @@
 				   $Form
 				</div>
 			<div class="row">
-			<% if $Children.Filter("ClassName","Schrattenholz\\Order\\ProductList") || $Children.Filter("ClassName","Schrattenholz\\Order\\Product")  %>
+			<% if $Children.Filter("ClassName","Schrattenholz\Order\ProductList") || $Children.Filter("ClassName","Schrattenholz\Order\Product")  %>
 				<% loop $Children.Sort('Date','DESC') %>
 				<!-- Catogory-->
 				<div class="col-md-4 col-sm-6 mb-3">
@@ -27,7 +27,7 @@
 					<div class="card-body">
 					<h2 class="h5">
 					<a href="$Link">$MenuTitle.XML</a></h2>									
-					<% if $ClassName=="Schrattenholz\\Order\\Product" %>
+					<% if $ClassName=="Schrattenholz\Order\Product" %>
 						<% if $CaPrice %>ca. <% end_if %>$Top.formattedNumber($KiloPrice.Price) &euro;/$Unit.Shortcode
 					<% end_if %>				
 					
